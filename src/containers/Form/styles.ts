@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Modal = styled.div`
   position: fixed;
@@ -55,6 +55,11 @@ export const InputContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    gap: 8px;
+  }
 
   label {
     display: block;

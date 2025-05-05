@@ -49,6 +49,14 @@ export const Info = styled.span`
   padding: 2px 4px;
   font-size: 14px;
   color: ${colors.fonte};
+
+  input {
+    display: block;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      display: inline;
+    }
+  }
 `
 
 export const InfoValue = styled.span`
@@ -67,6 +75,8 @@ export const ActionBar = styled.div`
   justify-content: space-between;
 
   @media (max-width: ${breakpoints.tablet}) {
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
   }
 `

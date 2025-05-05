@@ -37,7 +37,8 @@ export const EstiloGlobal = createGlobalStyle`
   }
 
   input {
-    background-color: ${colors.input}
+    background-color: ${colors.input};
+    width: 250px;
   }
 `
 
@@ -55,6 +56,7 @@ export const Botao = styled.button`
   padding: 2px 4px;
   font-weight: bold;
   border-radius: 8px;
+  width: fit-content;
 `
 
 export const BotaoApagar = styled.button`
@@ -63,6 +65,7 @@ export const BotaoApagar = styled.button`
   padding: 2px 4px;
   font-weight: bold;
   border-radius: 8px;
+  width: fit-content;
 `
 
 export const BotaoCentralizado = styled.div`
